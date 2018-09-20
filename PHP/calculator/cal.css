@@ -1,0 +1,20 @@
+body{
+  background-color: #000a1a;
+}
+h1, form, input, select{
+  padding: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+}
+h1{
+  font-size: 40px;
+  color: #FFFFFF;
+}
+form{
+   padding-top: 50px;
+}
+input, select{
+  margin: 10px;
+  font-size: 30px;
+  color: #000a1a;
+}

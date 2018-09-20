@@ -1,0 +1,27 @@
+
+body{
+  background-color: #8FB1FF;
+  color: #000a1a;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+  padding: 15px;
+}
+
+input{
+  font-family: 'PT Sans', sans-serif;
+  margin: 10px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 25px;
+  color: #000a1a;
+}
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th,td {
+  padding: 15px;
+}

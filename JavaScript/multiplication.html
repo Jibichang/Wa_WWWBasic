@@ -1,0 +1,17 @@
+<head>
+<title>A First Program in JavaScript</title>
+<script>
+var number; number=window.prompt( "Please enter your age", "number" );
+
+if (isNaN(number)){ /*check is not number*/
+	document.writeln("error");
+}else {
+	for (var count = 1 ; count <= 12 ; count++) {	
+		document.writeln(number +" * "+ count + "  =  " + number*count+"<br>");
+	}	
+}
+</script>
+</head>
+<body>
+<p>Click Refresh (or Reload) to run this script again.</p>
+</body>

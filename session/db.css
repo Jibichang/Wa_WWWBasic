@@ -1,0 +1,49 @@
+
+body{
+  background-color: #99ddff;
+  color: #000a1a;
+  font-size: 30px;
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+  padding: 20px;
+}
+#inputUser{
+  margin-top: 80px;
+  text-align: center;
+  padding: 20px;
+  border-style: solid;
+  border-width: medium;
+  border-color: white;
+
+}
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+.button {
+    background-color: gray;
+    color: #000a1a;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+input, .button{
+  font-family: 'PT Sans', sans-serif;
+  margin: 10px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 25px;
+  color: #000a1a;
+}
+#textX{
+  font-size: 20px;
+}
+#unsuc{
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

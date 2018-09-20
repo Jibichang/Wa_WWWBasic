@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel ="stylesheet" href="jq.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<h3>Start typing a number in the input field below:</h3>
+
+<form action="">
+  Number: <input type="number" id="number">
+  <input type="submit" value="clear" onclick="clear()">
+</form>
+
+<p><span id="txtHint"></span></p>
+<script>
+  $(document).ready(function(){
+    $("#number").keypress(function(){
+      $.get("jQuery_AJAX_resultMultiply.php?num="+$("#number").val(), function(data){
+           $("#txtHint").load("jQuery_AJAX_resultMultiply.php?num="+$("#number").val());
+        });
+      });
+  });
+</script>
+
+<script>
+function clear() {
+  document.getElementById("txtHint").innerHTML = ""
+  return;
+}
+</script>
+
+</body>
+</html>

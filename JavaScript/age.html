@@ -1,0 +1,22 @@
+<head>
+<title>A First Program in JavaScript</title>
+<script>
+var number; number=window.prompt( "Please enter your age", "number" );
+var sayhi="<h1>Hello, welcome to JavaScript! age : "+number+"</h1>";
+
+if (number >=10 && number < 10) {
+	document.writeln(sayhi + "<h1>child</h1>");
+} else if (number >=10 && number < 20) {
+	document.writeln(sayhi + "<h1>teen</h1>");
+} else if (number >=20 && number < 60) {
+	document.writeln(sayhi + "<h1>Adult</h1>");
+} else if (number >=60 && number < 120) {
+	document.writeln(sayhi + "<h1>old</h1>");
+} else {
+	document.writeln("<h1>error<h1>");
+}
+</script>
+</head>
+<body>
+<p>Click Refresh (or Reload) to run this script again.</p>
+</body>

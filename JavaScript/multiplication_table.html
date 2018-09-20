@@ -1,0 +1,50 @@
+<head>
+<style>
+table {
+    width:20%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+</style>
+<title>A First Program in JavaScript</title>
+<script>
+var number; number=window.prompt( "Please enter your age", "number" );
+</script>
+</head>
+<body>
+
+<table id="t01">
+	
+<script> 
+var num="<h1>"+number+"</h1>";
+document.writeln(num);
+
+if (isNaN(number)){ /*check is not number*/
+	document.writeln("error");
+}else {
+	//document.writeln("<tr><th>sd</th></tr>");	
+	for (var count = 1 ; count <= 12 ; count++) {	
+		document.writeln("</tr><td>"+ count + "</td> <td>" + number*count+"</td></tr>"); 
+	}	
+}
+</script>
+</table>
+
+<p>Click Refresh (or Reload) to run this script again.</p>
+</body>

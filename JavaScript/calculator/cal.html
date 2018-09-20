@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel ="stylesheet" href="cal.css" type="text/css" />
+  </head>
+  <body>
+    <h1>CALCULATOR</h1>
+    <hr>
+    <form role="form">
+    	<input type=number id="input1"  onchange="cal()" placeholder="Enter Number">
+      <select id="myList" onchange="cal()">
+          <option value="q">+</option>
+          <option value="w">-</option>
+          <option value="e">*</option>
+          <option value="r">/</option>
+          <option value="t">%</option>
+    </select>
+    <input type=number id="input2"  onchange="cal()" placeholder="Enter Number">
+    <p><input  id="ans" size="20" placeholder="answer"></p>
+    </form>
+
+    <script>
+    var output;
+      function cal() {
+         var a = parseInt(document.getElementById("input1").value);
+         var b = parseInt(document.getElementById("input2").value);
+         var mylist = document.getElementById("myList");
+
+       if(mylist.value == "q"){
+         output= a + b;
+         document.getElementById("ans").value = output;
+       }else if(mylist.value == "w"){
+         output = a - b;
+         document.getElementById("ans").value = output;
+       }else if(mylist.value == "e"){
+         output = a * b;
+         document.getElementById("ans").value = output;
+       }else if(mylist.value == "r"){
+          output = a / b;
+         document.getElementById("ans").value = output;
+       }else if(mylist.value == "t"){
+         output = a % b;
+         document.getElementById("ans").value = output;
+       }
+
+      }
+      </script>
+
+  </body>
+</html>
